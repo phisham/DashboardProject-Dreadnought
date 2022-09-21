@@ -1,0 +1,40 @@
+
+<mat-toolbar class="mat-elevation-z8">
+    <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+        <mat-icon *ngIf="!sidenav.opened">
+            menu
+        </mat-icon>
+        <mat-icon *ngIf="sidenav.opened">
+            close
+        </mat-icon>
+    </button>
+    <h2 style="font-weight: bolder;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">DREADNOUGHT</h2> 
+</mat-toolbar>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="sidenav mat-elevation-z8">
+        <button class="menu-button" routerLink="./home">
+            <div style="display: flex;flex-direction: row;" (click)="selectButton1($event)" ><mat-icon>home</mat-icon> Home</div>
+        </button>
+        <button class="menu-button" routerLink="./dashboard">
+            
+            <div style="display: flex;flex-direction: row;" id="dashboard" (click)="selectButton2($event)"><mat-icon>dashboard</mat-icon> DashBoard</div>
+        </button>
+        <!-- <button class="menu-button">
+            <mat-icon>info</mat-icon>
+            <span> About</span>
+        </button> -->
+
+        <mat-divider></mat-divider>
+
+        <button mat-button class="menu-button">
+            <mat-icon>help</mat-icon>
+            <span> Help</span>
+        </button>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <div class="content mat-elevation-z8">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

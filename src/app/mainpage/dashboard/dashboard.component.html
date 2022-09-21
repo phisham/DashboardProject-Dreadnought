@@ -1,0 +1,70 @@
+<div class="outermost">
+    <div class="outer1">
+        <div class="chartjs-container1 mat-elevation-z8">
+            <h4 style="margin-left: 3%;">Webinar Statistics</h4>
+            <canvas baseChart 
+                [datasets]="lineChartData" 
+                [labels]="lineChartLabels" 
+                [options]="lineChartOptions"
+                [colors]="lineChartColors" 
+                [legend]="lineChartLegend" 
+                [chartType]="'line'" 
+                [plugins]="lineChartPlugins"
+                (chartHover)="chartHovered($event)" 
+                
+                >
+                
+            </canvas>
+        </div>
+
+        <div class="container2">
+            <div class="chartjs-container2" >
+                <h4 style="margin-left:3% ;">Economy</h4>
+                <canvas baseChart class="dough"
+                    [data]="doughnutChartData" 
+                    [labels]="doughnutChartLabels" 
+                    [chartType]="'doughnut'"
+                    
+                    >
+                    
+                </canvas>
+            </div>
+            <div class="chartjs-container2">
+                <h4 style="margin-left: 3%;">Sales</h4>
+                <canvas baseChart class="bubble"
+                    [datasets]="bubbleChartData" 
+                    [options]="bubbleChartOptions" 
+                    [legend]="bubbleChartLegend"
+                    [chartType]="'bubble'">
+                </canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="outer2">
+            <div class="chartjs-container3" >
+                <h4 style="margin-left: 1%;margin-top: 1%;">Buissiness</h4>
+                <canvas 
+                    baseChart style="margin-top: -12%;margin-left: 10%;"
+                    [data]="pieChartData" 
+                    [labels]="pieChartLabels" 
+                    [chartType]="'pie'"
+                    [options]="pieChartOptions" 
+                    [plugins]="pieChartPlugins" 
+                    [colors]="pieChartColors" 
+                    [legend]="pieChartLegend">
+                </canvas>
+            </div>
+            <div class="chartjs-container4">
+                
+                <canvas baseChart 
+                    [datasets]="barChartData" 
+                    [labels]="barChartLabels" 
+                    [options]="barChartOptions"
+                    [plugins]="barChartPlugins" 
+                    [legend]="barChartLegend" 
+                    [chartType]="'bar'">
+                </canvas>
+            </div>
+    </div>
+</div>

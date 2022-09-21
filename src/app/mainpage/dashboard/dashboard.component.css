@@ -1,0 +1,120 @@
+.chartjs-container1{
+    
+    width: 800px;
+    height: 350px;
+    border-radius: 2%;
+    background-color: #1d2531;
+    box-shadow: black  8px 8px 8px 2px;
+    margin: 1%;
+    padding: 2%;
+    padding-bottom: 5%;
+}
+.chartjs-container2{
+    width: 405px;
+    height: 220px;
+    border-radius: 2%;
+    background-color: #1d2531;
+    box-shadow: black  8px 8px 8px 2px;
+    margin: 1%;
+    margin-top: -0.1%;
+    padding: 2px
+}
+.chartjs-container3{
+    width: 97%;
+    height: 42%;
+    border-radius: 2%;
+    background-color: #1d2531;
+    box-shadow: black  8px 8px 8px 2px;
+    margin-top: 3%;
+    padding-top: 5px;
+    padding: 2px;
+}
+.chartjs-container4{
+    width: 97%;
+    height: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2%;
+    background-color: #1d2531;
+    box-shadow: black  8px 8px 8px 2px;
+    margin-top: 2%;
+    padding: 2px;
+}
+.outermost{
+    display: flex;
+    flex-direction: row;
+}
+.outer1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70%;
+    margin-left: 1%;
+}
+.outer2{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: -3%;
+}
+.container2{
+    display: flex;
+    flex-direction: row;
+    
+}
+.dough{
+    margin-top: -8%;
+}
+.bubble{
+    margin-top: -8%;
+}
+@media screen and (max-width: 651px){
+    .outermost{
+        flex-direction: column;
+    }
+    .outer2{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1%;
+        margin-top: -2%;
+    }
+    .chartjs-container3{
+        width: 300px;
+        height: 300px;
+        padding: 2%;
+    }
+    .chartjs-container4{
+        width: 300px;
+        height: 300px;
+        padding: 2%;
+    }
+    .container2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .outer1{
+        width: 100%;
+        justify-content:center;
+        align-items: center;
+    }
+    .chartjs-container2{
+        width: 300px;
+        height: 250px;
+        margin-top: 1%;
+        padding: 2%;
+        padding-bottom: 5%;
+    }
+    .chartjs-container1{
+        width: 300px;
+        height: 300px;
+        padding-bottom: 10%;
+    }
+    .dough{
+        margin-top: 10%;
+    }
+    
+}
